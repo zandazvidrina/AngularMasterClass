@@ -1,0 +1,909 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04 - Routing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="exercise-1_child-routes.html" />
+    
+    
+    <link rel="prev" href="../forms/exercise-7_create-custom-form-control.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../jump-start-tutorial/">
+            
+                <a href="../jump-start-tutorial/">
+            
+                    
+                    01 - Jump-Start
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../jump-start-tutorial/exercise-1_using-directives.html">
+            
+                <a href="../jump-start-tutorial/exercise-1_using-directives.html">
+            
+                    
+                    Using Directives
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../jump-start-tutorial/exercise-2_display-first-contact.html">
+            
+                <a href="../jump-start-tutorial/exercise-2_display-first-contact.html">
+            
+                    
+                    Display First Contact
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../jump-start-tutorial/exercise-3_display-list-of-contacts.html">
+            
+                <a href="../jump-start-tutorial/exercise-3_display-list-of-contacts.html">
+            
+                    
+                    Display List of Contacts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../jump-start-tutorial/exercise-4_introduce-contactsservice.html">
+            
+                <a href="../jump-start-tutorial/exercise-4_introduce-contactsservice.html">
+            
+                    
+                    Using ContactsService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../jump-start-tutorial/exercise-5_route-to-contactslistcomponent.html">
+            
+                <a href="../jump-start-tutorial/exercise-5_route-to-contactslistcomponent.html">
+            
+                    
+                    Routing to ContactsList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../jump-start-tutorial/exercise-6_using-routeparams.html">
+            
+                <a href="../jump-start-tutorial/exercise-6_using-routeparams.html">
+            
+                    
+                    Using RouteParams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../jump-start-tutorial/exercise-7_fetching-data-using-http.html">
+            
+                <a href="../jump-start-tutorial/exercise-7_fetching-data-using-http.html">
+            
+                    
+                    Fetching Data Using HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../jump-start-tutorial/exercise-8_two-way-data-binding-and-sending-data.html">
+            
+                <a href="../jump-start-tutorial/exercise-8_two-way-data-binding-and-sending-data.html">
+            
+                    
+                    2-Way DataBinding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../jump-start-tutorial/exercise-9_async-pipe.html">
+            
+                <a href="../jump-start-tutorial/exercise-9_async-pipe.html">
+            
+                    
+                    Using Async Pipe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../rxjs/">
+            
+                <a href="../rxjs/">
+            
+                    
+                    02 - RxJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../rxjs/exercise-1_basic-search.html">
+            
+                <a href="../rxjs/exercise-1_basic-search.html">
+            
+                    
+                    Basic Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../rxjs/exercise-2_debounce-distinctuntilchanged.html">
+            
+                <a href="../rxjs/exercise-2_debounce-distinctuntilchanged.html">
+            
+                    
+                    RxJS Operators: Debounce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../rxjs/exercise-3_deal-with-out-of-order-responses.html">
+            
+                <a href="../rxjs/exercise-3_deal-with-out-of-order-responses.html">
+            
+                    
+                    Fix Out-of-Order Responses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../rxjs/exercise-4_move-logic-into-service.html">
+            
+                <a href="../rxjs/exercise-4_move-logic-into-service.html">
+            
+                    
+                    Refactor Logic into Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../forms/">
+            
+                <a href="../forms/">
+            
+                    
+                    03 - Forms
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    Template-Driven Forms
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../forms/exercise-1_create-template-driven-form.html">
+            
+                <a href="../forms/exercise-1_create-template-driven-form.html">
+            
+                    
+                    Create Template-Driven Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../forms/exercise-2_template-validators-and-error-messages.html">
+            
+                <a href="../forms/exercise-2_template-validators-and-error-messages.html">
+            
+                    
+                    Validators and Error Messages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../forms/exercise-3_add-custom-email-validator.html">
+            
+                <a href="../forms/exercise-3_add-custom-email-validator.html">
+            
+                    
+                    Custom Sync Email Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../forms/exercise-4_create-custom-async-validator-directive.html">
+            
+                <a href="../forms/exercise-4_create-custom-async-validator-directive.html">
+            
+                    
+                    Custom Async Validator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    Reactive Forms
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../forms/exercise-5_refactor-to-reactive-forms.html">
+            
+                <a href="../forms/exercise-5_refactor-to-reactive-forms.html">
+            
+                    
+                    Refactor to Reactive Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../forms/exercise-6_use-form-array-for-dynamic-form-fields.html">
+            
+                <a href="../forms/exercise-6_use-form-array-for-dynamic-form-fields.html">
+            
+                    
+                    Dynamic Form Fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../forms/exercise-7_create-custom-form-control.html">
+            
+                <a href="../forms/exercise-7_create-custom-form-control.html">
+            
+                    
+                    Custom Form Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    04 - Routing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="exercise-1_child-routes.html">
+            
+                <a href="exercise-1_child-routes.html">
+            
+                    
+                    Using Child Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="exercise-2_can-deactivate.html">
+            
+                <a href="exercise-2_can-deactivate.html">
+            
+                    
+                    CanDeactivate Guards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="exercise-3_refactor-navigation-guard.html">
+            
+                <a href="exercise-3_refactor-navigation-guard.html">
+            
+                    
+                    Navigation Guards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="exercise-4_fetch-contact-via-resolver.html">
+            
+                <a href="exercise-4_fetch-contact-via-resolver.html">
+            
+                    
+                    Router Resolvers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="exercise-5_loading-modules-asynchronously.html">
+            
+                <a href="exercise-5_loading-modules-asynchronously.html">
+            
+                    
+                    Lazy-Loaded Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../ngrx/">
+            
+                <a href="../ngrx/">
+            
+                    
+                    05 - NgRx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ngrx/step-1-use-ngrx.html">
+            
+                <a href="../ngrx/step-1-use-ngrx.html">
+            
+                    
+                    Using NgRx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../ngrx/step-2-select-and-edit.html">
+            
+                <a href="../ngrx/step-2-select-and-edit.html">
+            
+                    
+                    Select and Edit Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../ngrx/step-3-create-contact-exists-guard.html">
+            
+                <a href="../ngrx/step-3-create-contact-exists-guard.html">
+            
+                    
+                    Create ContactExists Guard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../ngrx/step-4-extract-selectors-and-use-entity-pattern.html">
+            
+                <a href="../ngrx/step-4-extract-selectors-and-use-entity-pattern.html">
+            
+                    
+                    Selectors + Entity-Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../ngrx/step-5-async-with-effects.html">
+            
+                <a href="../ngrx/step-5-async-with-effects.html">
+            
+                    
+                    Async Features w/ Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../ngrx/step-6-reactor-to-facade-architecture.html">
+            
+                <a href="../ngrx/step-6-reactor-to-facade-architecture.html">
+            
+                    
+                    Using Facades
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../ngrx/step-7-improve-effects.html">
+            
+                <a href="../ngrx/step-7-improve-effects.html">
+            
+                    
+                    Improving your NgRx Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../ngrx/step-8-use-ngrx-entity.html">
+            
+                <a href="../ngrx/step-8-use-ngrx-entity.html">
+            
+                    
+                    Using @ngrx/entity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../ngrx/step-9-restoring-search.html">
+            
+                <a href="../ngrx/step-9-restoring-search.html">
+            
+                    
+                    Manage Search State
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../architecture/">
+            
+                <a href="../architecture/">
+            
+                    
+                    06 - Archtecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../architecture/exercise-1_refactor-to-presentation-and-view-component.html">
+            
+                <a href="../architecture/exercise-1_refactor-to-presentation-and-view-component.html">
+            
+                    
+                    Smart + Dumb View Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    Component Coupling
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../architecture/exercise-2_build-tabs-using-parent-injection.html">
+            
+                <a href="../architecture/exercise-2_build-tabs-using-parent-injection.html">
+            
+                    
+                    Using Parent Injections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../architecture/exercise-3_refactor-tabs-to-use-content-children.html">
+            
+                <a href="../architecture/exercise-3_refactor-tabs-to-use-content-children.html">
+            
+                    
+                    Using Content Children
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../architecture/exercise-4_communicate-through-eventbus.html">
+            
+                <a href="../architecture/exercise-4_communicate-through-eventbus.html">
+            
+                    
+                    Using an EventBus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >04 - Routing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="routing">Routing</h2>
+<p>Let&apos;s explore Routing within Angular:</p>
+<figure id="fig1.5.1"><img src="https://user-images.githubusercontent.com/210413/46910020-55ba0380-cf99-11e8-82ee-008081819c40.jpg" alt="rrdme"><figcaption>Figure: rrdme</figcaption></figure>
+<h3 id="lab-exercises">Lab Exercises</h3>
+<ul>
+<li><a href="exercise-1_child-routes.html">Lab #1: Child Routes</a></li>
+<li><a href="exercise-2_can-deactivate.html">Lab #2: Router CanDeactivate</a></li>
+<li><a href="exercise-3_refactor-navigation-guard.html">Lab #3: Navigation Gaurds</a></li>
+<li><a href="exercise-4_fetch-contact-via-resolver.html">Lab #4: Route Resolvers</a></li>
+<li><a href="exercise-5_loading-modules-asynchronously.html">Lab #4: Lazy Loading Modules</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../forms/exercise-7_create-custom-form-control.html" class="navigation navigation-prev " aria-label="Previous page: Custom Form Control">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="exercise-1_child-routes.html" class="navigation navigation-next " aria-label="Next page: Using Child Routes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04 - Routing","level":"1.5","depth":1,"next":{"title":"Using Child Routes","level":"1.5.1","depth":2,"path":"exercises/routing/exercise-1_child-routes.md","ref":"exercises/routing/exercise-1_child-routes.md","articles":[]},"previous":{"title":"Custom Form Control","level":"1.4.2.3","depth":3,"path":"exercises/forms/exercise-7_create-custom-form-control.md","ref":"exercises/forms/exercise-7_create-custom-form-control.md","articles":[]},"dir":"ltr"},"config":{"gitbook":">= 3.0.0","theme":"default","variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Trade Me's Angular Master Class Lab Book","alt":"amc-labs","nro":1,"url":"../img/book-cover.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"Trade Me's Angular Master Class Lab Book","attributes":{},"title":"Trade Me's Angular Master Class Lab Book","skip":true,"key":"1.1.1"},{"backlink":"exercises/jump-start-tutorial/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: jrdme","alt":"jrdme","nro":2,"url":"https://user-images.githubusercontent.com/210413/46909506-22bf4200-cf90-11e8-88c3-b29ea7e16d0b.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"jrdme","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"exercises/jump-start-tutorial/exercise-2_display-first-contact.html#fig1.2.2.1","level":"1.2.2","list_caption":"Figure: j3","alt":"j3","nro":3,"url":"https://user-images.githubusercontent.com/210413/46899525-f7d1e100-cef0-11e8-8dc2-0053d433834f.png","index":1,"caption_template":"Figure: _CAPTION_","label":"j3","attributes":{},"skip":false,"key":"1.2.2.1"},{"backlink":"exercises/jump-start-tutorial/exercise-3_display-list-of-contacts.html#fig1.2.3.1","level":"1.2.3","list_caption":"Figure: j3","alt":"j3","nro":4,"url":"https://user-images.githubusercontent.com/210413/46899611-92322480-cef1-11e8-92ae-5056f48248c7.png","index":1,"caption_template":"Figure: _CAPTION_","label":"j3","attributes":{},"skip":false,"key":"1.2.3.1"},{"backlink":"exercises/jump-start-tutorial/exercise-3_display-list-of-contacts.html#fig1.2.3.2","level":"1.2.3","list_caption":"Figure: js30","alt":"js30","nro":5,"url":"https://user-images.githubusercontent.com/210413/46899281-cc012c00-ceed-11e8-9c91-b8ec2ae9fe3f.png","index":2,"caption_template":"Figure: _CAPTION_","label":"js30","attributes":{},"skip":false,"key":"1.2.3.2"},{"backlink":"exercises/jump-start-tutorial/exercise-3_display-list-of-contacts.html#fig1.2.3.3","level":"1.2.3","list_caption":"Figure: js3 1","alt":"js3 1","nro":6,"url":"https://user-images.githubusercontent.com/210413/46899218-12a25680-ceed-11e8-90cc-cffd8ba8c81c.png","index":3,"caption_template":"Figure: _CAPTION_","label":"js3 1","attributes":{},"skip":false,"key":"1.2.3.3"},{"backlink":"exercises/jump-start-tutorial/exercise-4_introduce-contactsservice.html#fig1.2.4.1","level":"1.2.4","list_caption":"Figure: j42","alt":"j42","nro":7,"url":"https://user-images.githubusercontent.com/210413/46899661-2a300e00-cef2-11e8-9079-7cad0ca5084c.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"j42","attributes":{},"skip":false,"key":"1.2.4.1"},{"backlink":"exercises/jump-start-tutorial/exercise-4_introduce-contactsservice.html#fig1.2.4.2","level":"1.2.4","list_caption":"Figure: j41","alt":"j41","nro":8,"url":"https://user-images.githubusercontent.com/210413/46899662-2ac8a480-cef2-11e8-80b9-6ef24a938707.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"j41","attributes":{},"skip":false,"key":"1.2.4.2"},{"backlink":"exercises/jump-start-tutorial/exercise-5_route-to-contactslistcomponent.html#fig1.2.5.1","level":"1.2.5","list_caption":"Figure: j51","alt":"j51","nro":9,"url":"https://user-images.githubusercontent.com/210413/46899695-deca2f80-cef2-11e8-8c3f-f9022359bc89.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"j51","attributes":{},"skip":false,"key":"1.2.5.1"},{"backlink":"exercises/jump-start-tutorial/exercise-5_route-to-contactslistcomponent.html#fig1.2.5.2","level":"1.2.5","list_caption":"Figure: j52","alt":"j52","nro":10,"url":"https://user-images.githubusercontent.com/210413/46899700-19cc6300-cef3-11e8-8558-1f60760b4a1a.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"j52","attributes":{},"skip":false,"key":"1.2.5.2"},{"backlink":"exercises/jump-start-tutorial/exercise-7_fetching-data-using-http.html#fig1.2.7.1","level":"1.2.7","list_caption":"Figure: j7 1","alt":"j7 1","nro":11,"url":"https://user-images.githubusercontent.com/210413/46908823-11bd0380-cf85-11e8-89c2-0863225f4b38.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"j7 1","attributes":{},"skip":false,"key":"1.2.7.1"},{"backlink":"exercises/jump-start-tutorial/exercise-7_fetching-data-using-http.html#fig1.2.7.2","level":"1.2.7","list_caption":"Figure: j7 2","alt":"j7 2","nro":12,"url":"https://user-images.githubusercontent.com/210413/46908822-11bd0380-cf85-11e8-8b83-ae3fe4ab3863.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"j7 2","attributes":{},"skip":false,"key":"1.2.7.2"},{"backlink":"exercises/jump-start-tutorial/exercise-8_two-way-data-binding-and-sending-data.html#fig1.2.8.1","level":"1.2.8","list_caption":"Figure: j8 1","alt":"j8 1","nro":13,"url":"https://user-images.githubusercontent.com/210413/46908879-a6276600-cf85-11e8-9f6d-38f6cd59f5cb.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"j8 1","attributes":{},"skip":false,"key":"1.2.8.1"},{"backlink":"exercises/jump-start-tutorial/exercise-8_two-way-data-binding-and-sending-data.html#fig1.2.8.2","level":"1.2.8","list_caption":"Figure: j8 2","alt":"j8 2","nro":14,"url":"https://user-images.githubusercontent.com/210413/46908878-a6276600-cf85-11e8-86d9-8766f6effef0.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"j8 2","attributes":{},"skip":false,"key":"1.2.8.2"},{"backlink":"exercises/jump-start-tutorial/exercise-9_async-pipe.html#fig1.2.9.1","level":"1.2.9","list_caption":"Figure: j9 1","alt":"j9 1","nro":15,"url":"https://user-images.githubusercontent.com/210413/46908895-eb4b9800-cf85-11e8-8590-759f42b47390.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"j9 1","attributes":{},"skip":false,"key":"1.2.9.1"},{"backlink":"exercises/rxjs/index.html#fig1.3.1","level":"1.3","list_caption":"Figure: ordme","alt":"ordme","nro":16,"url":"https://user-images.githubusercontent.com/210413/46909874-3e2d4b80-cf96-11e8-964d-9ddc9c4307b6.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ordme","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"exercises/rxjs/exercise-1_basic-search.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: o1","alt":"o1","nro":17,"url":"https://user-images.githubusercontent.com/210413/46899916-741af300-cef6-11e8-9c24-d055e447b798.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"o1","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"exercises/rxjs/exercise-2_debounce-distinctuntilchanged.html#fig1.3.2.1","level":"1.3.2","list_caption":"Figure: o1","alt":"o1","nro":18,"url":"https://user-images.githubusercontent.com/210413/46899916-741af300-cef6-11e8-9c24-d055e447b798.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"o1","attributes":{},"skip":false,"key":"1.3.2.1"},{"backlink":"exercises/forms/index.html#fig1.4.1","level":"1.4","list_caption":"Figure: frdme","alt":"frdme","nro":19,"url":"https://user-images.githubusercontent.com/210413/46909718-84cd7680-cf93-11e8-8615-bc266a0bb9a4.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"frdme","attributes":{},"skip":false,"key":"1.4.1"},{"backlink":"exercises/forms/exercise-1_create-template-driven-form.html#fig1.4.1.1.1","level":"1.4.1.1","list_caption":"Figure: f1","alt":"f1","nro":20,"url":"https://user-images.githubusercontent.com/210413/46901357-79843780-cf0e-11e8-9a26-47785fd26c22.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"f1","attributes":{},"skip":false,"key":"1.4.1.1.1"},{"backlink":"exercises/forms/exercise-2_template-validators-and-error-messages.html#fig1.4.1.2.1","level":"1.4.1.2","list_caption":"Figure: f20","alt":"f20","nro":21,"url":"https://user-images.githubusercontent.com/210413/46901631-a71faf80-cf13-11e8-83f9-0e3adbd722ea.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"f20","attributes":{},"skip":false,"key":"1.4.1.2.1"},{"backlink":"exercises/forms/exercise-2_template-validators-and-error-messages.html#fig1.4.1.2.2","level":"1.4.1.2","list_caption":"Figure: f2 1","alt":"f2 1","nro":22,"url":"https://user-images.githubusercontent.com/210413/46991734-a0877700-d163-11e8-986d-b7816ab00356.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"f2 1","attributes":{},"skip":false,"key":"1.4.1.2.2"},{"backlink":"exercises/forms/exercise-3_add-custom-email-validator.html#fig1.4.1.3.1","level":"1.4.1.3","list_caption":"Figure: f22","alt":"f22","nro":23,"url":"https://user-images.githubusercontent.com/210413/46901606-5c059c80-cf13-11e8-9a00-f5376fc19aa1.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"f22","attributes":{},"skip":false,"key":"1.4.1.3.1"},{"backlink":"exercises/forms/exercise-3_add-custom-email-validator.html#fig1.4.1.3.2","level":"1.4.1.3","list_caption":"Figure: group 10","alt":"group 10","nro":24,"url":"https://user-images.githubusercontent.com/210413/46901674-5bb9d100-cf14-11e8-8485-10dc21a2d06b.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"group 10","attributes":{},"skip":false,"key":"1.4.1.3.2"},{"backlink":"exercises/forms/exercise-4_create-custom-async-validator-directive.html#fig1.4.1.4.1","level":"1.4.1.4","list_caption":"Figure: f42","alt":"f42","nro":25,"url":"https://user-images.githubusercontent.com/210413/46901747-704a9900-cf15-11e8-9753-864970e8afa8.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"f42","attributes":{},"skip":false,"key":"1.4.1.4.1"},{"backlink":"exercises/forms/exercise-4_create-custom-async-validator-directive.html#fig1.4.1.4.2","level":"1.4.1.4","list_caption":"Figure: f43","alt":"f43","nro":26,"url":"https://user-images.githubusercontent.com/210413/46901907-83ab3380-cf18-11e8-89ea-a006a192ca05.png","index":2,"caption_template":"Figure: _CAPTION_","label":"f43","attributes":{},"skip":false,"key":"1.4.1.4.2"},{"backlink":"exercises/forms/exercise-5_refactor-to-reactive-forms.html#fig1.4.2.1.1","level":"1.4.2.1","list_caption":"Figure: fr1 1","alt":"fr1 1","nro":27,"url":"https://user-images.githubusercontent.com/210413/47047476-2bb04d80-d1f4-11e8-8f86-b02e0ce6414a.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"fr1 1","attributes":{},"skip":false,"key":"1.4.2.1.1"},{"backlink":"exercises/forms/exercise-5_refactor-to-reactive-forms.html#fig1.4.2.1.2","level":"1.4.2.1","list_caption":"Figure: f43","alt":"f43","nro":28,"url":"https://user-images.githubusercontent.com/210413/46901783-64aba200-cf16-11e8-863f-6bddaee00de8.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"f43","attributes":{},"skip":false,"key":"1.4.2.1.2"},{"backlink":"exercises/forms/exercise-6_use-form-array-for-dynamic-form-fields.html#fig1.4.2.2.1","level":"1.4.2.2","list_caption":"Figure: group 14","alt":"group 14","nro":29,"url":"https://user-images.githubusercontent.com/210413/46901958-4004f980-cf19-11e8-9410-cf136d3aef1d.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"group 14","attributes":{},"skip":false,"key":"1.4.2.2.1"},{"backlink":"exercises/forms/exercise-7_create-custom-form-control.html#fig1.4.2.3.1","level":"1.4.2.3","list_caption":"Figure: group 15","alt":"group 15","nro":30,"url":"https://user-images.githubusercontent.com/210413/46901983-aa1d9e80-cf19-11e8-9942-9224c0ac2792.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"group 15","attributes":{},"skip":false,"key":"1.4.2.3.1"},{"backlink":"exercises/routing/index.html#fig1.5.1","level":"1.5","list_caption":"Figure: rrdme","alt":"rrdme","nro":31,"url":"https://user-images.githubusercontent.com/210413/46910020-55ba0380-cf99-11e8-82ee-008081819c40.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"rrdme","attributes":{},"skip":false,"key":"1.5.1"},{"backlink":"exercises/routing/exercise-1_child-routes.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: r1","alt":"r1","nro":32,"url":"https://user-images.githubusercontent.com/210413/46908247-9ce5cb80-cf7c-11e8-9864-d26a989c71b6.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"r1","attributes":{},"skip":false,"key":"1.5.1.1"},{"backlink":"exercises/routing/exercise-1_child-routes.html#fig1.5.1.2","level":"1.5.1","list_caption":"Figure: master-details","alt":"master-details","nro":33,"url":"https://cloud.githubusercontent.com/assets/210413/21835265/b6d82d78-d80f-11e6-938d-a486f8a11f19.png","index":2,"caption_template":"Figure: _CAPTION_","label":"master-details","attributes":{},"skip":false,"key":"1.5.1.2"},{"backlink":"exercises/routing/exercise-1_child-routes.html#fig1.5.1.3","level":"1.5.1","list_caption":"Figure: r1 2","alt":"r1 2","nro":34,"url":"https://user-images.githubusercontent.com/210413/46908346-04e8e180-cf7e-11e8-8b28-508b06aa3658.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"r1 2","attributes":{},"skip":false,"key":"1.5.1.3"},{"backlink":"exercises/routing/exercise-1_child-routes.html#fig1.5.1.4","level":"1.5.1","list_caption":"Figure: r1 3","alt":"r1 3","nro":35,"url":"https://user-images.githubusercontent.com/210413/46908387-8cceeb80-cf7e-11e8-939f-5bbd64c1b472.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"r1 3","attributes":{},"skip":false,"key":"1.5.1.4"},{"backlink":"exercises/routing/exercise-1_child-routes.html#fig1.5.1.5","level":"1.5.1","list_caption":"Figure: r1 1","alt":"r1 1","nro":36,"url":"https://user-images.githubusercontent.com/210413/46908310-92780180-cf7d-11e8-8261-9ecf4328a268.jpg","index":5,"caption_template":"Figure: _CAPTION_","label":"r1 1","attributes":{},"skip":false,"key":"1.5.1.5"},{"backlink":"exercises/routing/exercise-2_can-deactivate.html#fig1.5.2.1","level":"1.5.2","list_caption":"Figure: r2 1","alt":"r2 1","nro":37,"url":"https://user-images.githubusercontent.com/210413/46908442-4e85fc00-cf7f-11e8-9cc3-52ec8bb81cd3.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"r2 1","attributes":{},"skip":false,"key":"1.5.2.1"},{"backlink":"exercises/routing/exercise-2_can-deactivate.html#fig1.5.2.2","level":"1.5.2","list_caption":"Figure: r2 2","alt":"r2 2","nro":38,"url":"https://user-images.githubusercontent.com/210413/46908478-d66c0600-cf7f-11e8-9ad8-92e716b0c524.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"r2 2","attributes":{},"skip":false,"key":"1.5.2.2"},{"backlink":"exercises/routing/exercise-3_refactor-navigation-guard.html#fig1.5.3.1","level":"1.5.3","list_caption":"Figure: r3 1","alt":"r3 1","nro":39,"url":"https://user-images.githubusercontent.com/210413/46908541-d6203a80-cf80-11e8-93ed-1e3365328c49.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"r3 1","attributes":{},"skip":false,"key":"1.5.3.1"},{"backlink":"exercises/routing/exercise-3_refactor-navigation-guard.html#fig1.5.3.2","level":"1.5.3","list_caption":"Figure: r3 2","alt":"r3 2","nro":40,"url":"https://user-images.githubusercontent.com/210413/46908571-27c8c500-cf81-11e8-8801-468c56e24aa4.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"r3 2","attributes":{},"skip":false,"key":"1.5.3.2"},{"backlink":"exercises/routing/exercise-3_refactor-navigation-guard.html#fig1.5.3.3","level":"1.5.3","list_caption":"Figure: r3 3","alt":"r3 3","nro":41,"url":"https://user-images.githubusercontent.com/210413/46908614-d66d0580-cf81-11e8-9300-e3d0babd8829.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"r3 3","attributes":{},"skip":false,"key":"1.5.3.3"},{"backlink":"exercises/routing/exercise-4_fetch-contact-via-resolver.html#fig1.5.4.1","level":"1.5.4","list_caption":"Figure: r4 1","alt":"r4 1","nro":42,"url":"https://user-images.githubusercontent.com/210413/46908651-67dc7780-cf82-11e8-829c-0412b9977286.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"r4 1","attributes":{},"skip":false,"key":"1.5.4.1"},{"backlink":"exercises/routing/exercise-5_loading-modules-asynchronously.html#fig1.5.5.1","level":"1.5.5","list_caption":"Figure: r5 1","alt":"r5 1","nro":43,"url":"https://user-images.githubusercontent.com/210413/46908723-93139680-cf83-11e8-98b7-894c61d10e1c.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"r5 1","attributes":{},"skip":false,"key":"1.5.5.1"},{"backlink":"exercises/routing/exercise-5_loading-modules-asynchronously.html#fig1.5.5.2","level":"1.5.5","list_caption":"Figure: r5 2","alt":"r5 2","nro":44,"url":"https://user-images.githubusercontent.com/210413/46908721-93139680-cf83-11e8-8211-aa1ebb4f28e0.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"r5 2","attributes":{},"skip":false,"key":"1.5.5.2"},{"backlink":"exercises/ngrx/index.html#fig1.6.1","level":"1.6","list_caption":"Figure: nrx-intro","alt":"nrx-intro","nro":45,"url":"https://cloud.githubusercontent.com/assets/210413/25602798/46c41d86-2ebc-11e7-94e8-ed0d0d07c6d5.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"nrx-intro","attributes":{},"skip":false,"key":"1.6.1"},{"backlink":"exercises/ngrx/step-1-use-ngrx.html#fig1.6.1.1","level":"1.6.1","list_caption":"Figure: ngrx2","alt":"ngrx2","nro":46,"url":"https://cloud.githubusercontent.com/assets/210413/25412574/3f4d8402-29e9-11e7-9221-7eb190b7e19c.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx2","attributes":{},"skip":false,"key":"1.6.1.1"},{"backlink":"exercises/ngrx/step-1-use-ngrx.html#fig1.6.1.2","level":"1.6.1","list_caption":"Figure: ng1 1","alt":"ng1 1","nro":47,"url":"https://user-images.githubusercontent.com/210413/46913044-1fed3d00-cfe2-11e8-8982-9cd235aa28c7.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ng1 1","attributes":{},"skip":false,"key":"1.6.1.2"},{"backlink":"exercises/ngrx/step-1-use-ngrx.html#fig1.6.1.3","level":"1.6.1","list_caption":"Figure: ng1 2","alt":"ng1 2","nro":48,"url":"https://user-images.githubusercontent.com/210413/46913187-e1a54d00-cfe4-11e8-9d12-fb9e5415f42b.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ng1 2","attributes":{},"skip":false,"key":"1.6.1.3"},{"backlink":"exercises/ngrx/step-1-use-ngrx.html#fig1.6.1.4","level":"1.6.1","list_caption":"Figure: ng1 3","alt":"ng1 3","nro":49,"url":"https://user-images.githubusercontent.com/210413/46913042-1f54a680-cfe2-11e8-9fc2-ade94c24b100.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ng1 3","attributes":{},"skip":false,"key":"1.6.1.4"},{"backlink":"exercises/ngrx/step-1-use-ngrx.html#fig1.6.1.5","level":"1.6.1","list_caption":"Figure: ng1 4","alt":"ng1 4","nro":50,"url":"https://user-images.githubusercontent.com/210413/46913207-35b03180-cfe5-11e8-9468-670e640a3947.jpg","index":5,"caption_template":"Figure: _CAPTION_","label":"ng1 4","attributes":{},"skip":false,"key":"1.6.1.5"},{"backlink":"exercises/ngrx/step-2-select-and-edit.html#fig1.6.2.1","level":"1.6.2","list_caption":"Figure: ngrx-step-2-select-and-edit-contact","alt":"ngrx-step-2-select-and-edit-contact","nro":51,"url":"https://cloud.githubusercontent.com/assets/210413/25500318/30de6c62-2b54-11e7-8bcf-3b2d6bb6ab70.png","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx-step-2-select-and-edit-contact","attributes":{},"skip":false,"key":"1.6.2.1"},{"backlink":"exercises/ngrx/step-2-select-and-edit.html#fig1.6.2.2","level":"1.6.2","list_caption":"Figure: ngrx2 1","alt":"ngrx2 1","nro":52,"url":"https://user-images.githubusercontent.com/210413/47127084-22a0a880-d2e8-11e8-84dd-fc71b0ab3cfe.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx2 1","attributes":{},"skip":false,"key":"1.6.2.2"},{"backlink":"exercises/ngrx/step-2-select-and-edit.html#fig1.6.2.3","level":"1.6.2","list_caption":"Figure: ngrx2 2","alt":"ngrx2 2","nro":53,"url":"https://user-images.githubusercontent.com/210413/46927554-7ca83080-d092-11e8-89a6-5580c2dda015.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngrx2 2","attributes":{},"skip":false,"key":"1.6.2.3"},{"backlink":"exercises/ngrx/step-2-select-and-edit.html#fig1.6.2.4","level":"1.6.2","list_caption":"Figure: ngrx2 3","alt":"ngrx2 3","nro":54,"url":"https://user-images.githubusercontent.com/210413/46927724-6cdd1c00-d093-11e8-990e-a09ad92ee999.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ngrx2 3","attributes":{},"skip":false,"key":"1.6.2.4"},{"backlink":"exercises/ngrx/step-3-create-contact-exists-guard.html#fig1.6.3.1","level":"1.6.3","list_caption":"Figure: ngrx_contactdetail_router_guard","alt":"ngrx_contactdetail_router_guard","nro":55,"url":"https://cloud.githubusercontent.com/assets/210413/25588493/21679b24-2e6e-11e7-8072-58bce451f333.png","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx_contactdetail_router_guard","attributes":{},"skip":false,"key":"1.6.3.1"},{"backlink":"exercises/ngrx/step-3-create-contact-exists-guard.html#fig1.6.3.2","level":"1.6.3","list_caption":"Figure: ngrxl3 1","alt":"ngrxl3 1","nro":56,"url":"https://user-images.githubusercontent.com/210413/47104576-43441080-d29e-11e8-936c-e121ed1c850a.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrxl3 1","attributes":{},"skip":false,"key":"1.6.3.2"},{"backlink":"exercises/ngrx/step-4-extract-selectors-and-use-entity-pattern.html#fig1.6.4.1","level":"1.6.4","list_caption":"Figure: ngrx4 1","alt":"ngrx4 1","nro":57,"url":"https://user-images.githubusercontent.com/210413/47105965-ec403a80-d2a1-11e8-9b33-331975e9aaa1.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx4 1","attributes":{},"skip":false,"key":"1.6.4.1"},{"backlink":"exercises/ngrx/step-4-extract-selectors-and-use-entity-pattern.html#fig1.6.4.2","level":"1.6.4","list_caption":"Figure: ngrx4 4","alt":"ngrx4 4","nro":58,"url":"https://user-images.githubusercontent.com/210413/47106765-fbc08300-d2a3-11e8-84f4-043bd5695c9e.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx4 4","attributes":{},"skip":false,"key":"1.6.4.2"},{"backlink":"exercises/ngrx/step-4-extract-selectors-and-use-entity-pattern.html#fig1.6.4.3","level":"1.6.4","list_caption":"Figure: ngrx4 2","alt":"ngrx4 2","nro":59,"url":"https://user-images.githubusercontent.com/210413/47105963-ec403a80-d2a1-11e8-862f-741b02571d96.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngrx4 2","attributes":{},"skip":false,"key":"1.6.4.3"},{"backlink":"exercises/ngrx/step-4-extract-selectors-and-use-entity-pattern.html#fig1.6.4.4","level":"1.6.4","list_caption":"Figure: ngrx4 3","alt":"ngrx4 3","nro":60,"url":"https://user-images.githubusercontent.com/210413/47105962-eba7a400-d2a1-11e8-8f9f-6050ac1bd373.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ngrx4 3","attributes":{},"skip":false,"key":"1.6.4.4"},{"backlink":"exercises/ngrx/step-5-async-with-effects.html#fig1.6.5.1","level":"1.6.5","list_caption":"Figure: step-6-async-with-effects","alt":"step-6-async-with-effects","nro":61,"url":"https://user-images.githubusercontent.com/210413/29373606-69096ee4-8274-11e7-9d1a-3a61cd291436.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"step-6-async-with-effects","attributes":{},"skip":false,"key":"1.6.5.1"},{"backlink":"exercises/ngrx/step-5-async-with-effects.html#fig1.6.5.2","level":"1.6.5","list_caption":"Figure: ngrx5 1","alt":"ngrx5 1","nro":62,"url":"https://user-images.githubusercontent.com/210413/47119625-14429480-d2c8-11e8-81a1-bde96de5feaa.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx5 1","attributes":{},"skip":false,"key":"1.6.5.2"},{"backlink":"exercises/ngrx/step-5-async-with-effects.html#fig1.6.5.3","level":"1.6.5","list_caption":"Figure: ngrx5 2","alt":"ngrx5 2","nro":63,"url":"https://user-images.githubusercontent.com/210413/47119624-14429480-d2c8-11e8-8aeb-4dee0fd0b52d.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngrx5 2","attributes":{},"skip":false,"key":"1.6.5.3"},{"backlink":"exercises/ngrx/step-5-async-with-effects.html#fig1.6.5.4","level":"1.6.5","list_caption":"Figure: ngrx5 3","alt":"ngrx5 3","nro":64,"url":"https://user-images.githubusercontent.com/210413/47119623-14429480-d2c8-11e8-9ca2-6d7636d7ac92.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ngrx5 3","attributes":{},"skip":false,"key":"1.6.5.4"},{"backlink":"exercises/ngrx/step-6-reactor-to-facade-architecture.html#fig1.6.6.1","level":"1.6.6","list_caption":"Figure: lab7-using-facades","alt":"lab7-using-facades","nro":65,"url":"https://cloud.githubusercontent.com/assets/210413/25640329/c83ddfb2-2f54-11e7-8623-b99afd669810.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"lab7-using-facades","attributes":{},"skip":false,"key":"1.6.6.1"},{"backlink":"exercises/ngrx/step-6-reactor-to-facade-architecture.html#fig1.6.6.2","level":"1.6.6","list_caption":"Figure: ngrx6 1","alt":"ngrx6 1","nro":66,"url":"https://user-images.githubusercontent.com/210413/47120321-a9df2380-d2ca-11e8-9b39-07021751a215.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx6 1","attributes":{},"skip":false,"key":"1.6.6.2"},{"backlink":"exercises/ngrx/step-6-reactor-to-facade-architecture.html#fig1.6.6.3","level":"1.6.6","list_caption":"Figure: ngrx6 2","alt":"ngrx6 2","nro":67,"url":"https://user-images.githubusercontent.com/210413/47120320-a9df2380-d2ca-11e8-97bc-242b11b78763.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngrx6 2","attributes":{},"skip":false,"key":"1.6.6.3"},{"backlink":"exercises/ngrx/step-6-reactor-to-facade-architecture.html#fig1.6.6.4","level":"1.6.6","list_caption":"Figure: ngrx6 3","alt":"ngrx6 3","nro":68,"url":"https://user-images.githubusercontent.com/210413/47120520-81a3f480-d2cb-11e8-9c01-51b3fdd42e36.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ngrx6 3","attributes":{},"skip":false,"key":"1.6.6.4"},{"backlink":"exercises/ngrx/step-7-improve-effects.html#fig1.6.7.1","level":"1.6.7","list_caption":"Figure: ngrx8 1","alt":"ngrx8 1","nro":69,"url":"https://user-images.githubusercontent.com/210413/47473421-2d6fa780-d7d8-11e8-9547-75c55a4f6d06.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx8 1","attributes":{},"skip":false,"key":"1.6.7.1"},{"backlink":"exercises/ngrx/step-7-improve-effects.html#fig1.6.7.2","level":"1.6.7","list_caption":"Figure: ngrx8 3","alt":"ngrx8 3","nro":70,"url":"https://user-images.githubusercontent.com/210413/47195996-fd309f00-d3ba-11e8-9fb0-d14cdfe63fc8.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx8 3","attributes":{},"skip":false,"key":"1.6.7.2"},{"backlink":"exercises/ngrx/step-7-improve-effects.html#fig1.6.7.3","level":"1.6.7","list_caption":"Figure: ngr9 5","alt":"ngr9 5","nro":71,"url":"https://user-images.githubusercontent.com/210413/47195653-497adf80-d3b9-11e8-94d1-ec50cb0616e5.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngr9 5","attributes":{},"skip":false,"key":"1.6.7.3"},{"backlink":"exercises/ngrx/step-8-use-ngrx-entity.html#fig1.6.8.1","level":"1.6.8","list_caption":"Figure: ngrx9 1","alt":"ngrx9 1","nro":72,"url":"https://user-images.githubusercontent.com/210413/47192883-5b09ba80-d3ac-11e8-85ad-cd6cbfae61fd.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx9 1","attributes":{},"skip":false,"key":"1.6.8.1"},{"backlink":"exercises/ngrx/step-8-use-ngrx-entity.html#fig1.6.8.2","level":"1.6.8","list_caption":"Figure: ngrx9 2","alt":"ngrx9 2","nro":73,"url":"https://user-images.githubusercontent.com/210413/47192882-5b09ba80-d3ac-11e8-8456-f296c32feb6b.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx9 2","attributes":{},"skip":false,"key":"1.6.8.2"},{"backlink":"exercises/ngrx/step-8-use-ngrx-entity.html#fig1.6.8.3","level":"1.6.8","list_caption":"Figure: ngrx9 3","alt":"ngrx9 3","nro":74,"url":"https://user-images.githubusercontent.com/210413/47192881-5a712400-d3ac-11e8-9fab-e514fa01fbda.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngrx9 3","attributes":{},"skip":false,"key":"1.6.8.3"},{"backlink":"exercises/ngrx/step-8-use-ngrx-entity.html#fig1.6.8.4","level":"1.6.8","list_caption":"Figure: ngr9 4","alt":"ngr9 4","nro":75,"url":"https://user-images.githubusercontent.com/210413/47192992-19c5da80-d3ad-11e8-905b-dd9389ee3fd3.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ngr9 4","attributes":{},"skip":false,"key":"1.6.8.4"},{"backlink":"exercises/ngrx/step-9-restoring-search.html#fig1.6.9.1","level":"1.6.9","list_caption":"Figure: ngrx9 1","alt":"ngrx9 1","nro":76,"url":"https://user-images.githubusercontent.com/210413/47192883-5b09ba80-d3ac-11e8-85ad-cd6cbfae61fd.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ngrx9 1","attributes":{},"skip":false,"key":"1.6.9.1"},{"backlink":"exercises/ngrx/step-9-restoring-search.html#fig1.6.9.2","level":"1.6.9","list_caption":"Figure: ngrx9 2","alt":"ngrx9 2","nro":77,"url":"https://user-images.githubusercontent.com/210413/47192882-5b09ba80-d3ac-11e8-8456-f296c32feb6b.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"ngrx9 2","attributes":{},"skip":false,"key":"1.6.9.2"},{"backlink":"exercises/ngrx/step-9-restoring-search.html#fig1.6.9.3","level":"1.6.9","list_caption":"Figure: ngrx9 3","alt":"ngrx9 3","nro":78,"url":"https://user-images.githubusercontent.com/210413/47192881-5a712400-d3ac-11e8-9fab-e514fa01fbda.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"ngrx9 3","attributes":{},"skip":false,"key":"1.6.9.3"},{"backlink":"exercises/ngrx/step-9-restoring-search.html#fig1.6.9.4","level":"1.6.9","list_caption":"Figure: ngr9 4","alt":"ngr9 4","nro":79,"url":"https://user-images.githubusercontent.com/210413/47192992-19c5da80-d3ad-11e8-905b-dd9389ee3fd3.jpg","index":4,"caption_template":"Figure: _CAPTION_","label":"ngr9 4","attributes":{},"skip":false,"key":"1.6.9.4"},{"backlink":"exercises/architecture/index.html#fig1.7.1","level":"1.7","list_caption":"Figure: ardme","alt":"ardme","nro":80,"url":"https://user-images.githubusercontent.com/210413/46909934-4639bb00-cf97-11e8-96ae-16b5315dab91.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"ardme","attributes":{},"skip":false,"key":"1.7.1"},{"backlink":"exercises/architecture/exercise-1_refactor-to-presentation-and-view-component.html#fig1.7.1.1","level":"1.7.1","list_caption":"Figure: architecture-step-1","alt":"architecture-step-1","nro":81,"url":"https://cloud.githubusercontent.com/assets/210413/17628008/01b38be4-6079-11e6-8083-14f678cd0541.png","index":1,"caption_template":"Figure: _CAPTION_","label":"architecture-step-1","attributes":{},"skip":false,"key":"1.7.1.1"},{"backlink":"exercises/architecture/exercise-1_refactor-to-presentation-and-view-component.html#fig1.7.1.2","level":"1.7.1","list_caption":"Figure: a1","alt":"a1","nro":82,"url":"https://user-images.githubusercontent.com/210413/46903486-1a381e80-cf32-11e8-9139-9c09a534b96e.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"a1","attributes":{},"skip":false,"key":"1.7.1.2"},{"backlink":"exercises/architecture/exercise-1_refactor-to-presentation-and-view-component.html#fig1.7.1.3","level":"1.7.1","list_caption":"Figure: a2","alt":"a2","nro":83,"url":"https://user-images.githubusercontent.com/210413/46903485-199f8800-cf32-11e8-92b7-d28c28644a45.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"a2","attributes":{},"skip":false,"key":"1.7.1.3"},{"backlink":"exercises/architecture/exercise-2_build-tabs-using-parent-injection.html#fig1.7.2.1.1","level":"1.7.2.1","list_caption":"Figure: a3","alt":"a3","nro":84,"url":"https://user-images.githubusercontent.com/210413/46903560-56b84a00-cf33-11e8-9fd6-9752a999d429.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"a3","attributes":{},"skip":false,"key":"1.7.2.1.1"},{"backlink":"exercises/architecture/exercise-2_build-tabs-using-parent-injection.html#fig1.7.2.1.2","level":"1.7.2.1","list_caption":"Figure: a4","alt":"a4","nro":85,"url":"https://user-images.githubusercontent.com/210413/46903581-9e3ed600-cf33-11e8-990a-a032ea2a2c5e.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"a4","attributes":{},"skip":false,"key":"1.7.2.1.2"},{"backlink":"exercises/architecture/exercise-2_build-tabs-using-parent-injection.html#fig1.7.2.1.3","level":"1.7.2.1","list_caption":"Figure: a2","alt":"a2","nro":86,"url":"https://user-images.githubusercontent.com/210413/46903530-d4c82100-cf32-11e8-8acf-c7c8f8289cbc.jpg","index":3,"caption_template":"Figure: _CAPTION_","label":"a2","attributes":{},"skip":false,"key":"1.7.2.1.3"},{"backlink":"exercises/architecture/exercise-3_refactor-tabs-to-use-content-children.html#fig1.7.2.2.1","level":"1.7.2.2","list_caption":"Figure: a5","alt":"a5","nro":87,"url":"https://user-images.githubusercontent.com/210413/46903655-65ebc780-cf34-11e8-9e7f-02088d432c0a.jpg","index":1,"caption_template":"Figure: _CAPTION_","label":"a5","attributes":{},"skip":false,"key":"1.7.2.2.1"},{"backlink":"exercises/architecture/exercise-3_refactor-tabs-to-use-content-children.html#fig1.7.2.2.2","level":"1.7.2.2","list_caption":"Figure: a3 1","alt":"a3 1","nro":88,"url":"https://user-images.githubusercontent.com/210413/47057248-4ac2d580-d21c-11e8-82cd-05b15ebee59a.jpg","index":2,"caption_template":"Figure: _CAPTION_","label":"a3 1","attributes":{},"skip":false,"key":"1.7.2.2.2"},{"backlink":"exercises/architecture/exercise-4_communicate-through-eventbus.html#fig1.7.2.3.1","level":"1.7.2.3","list_caption":"Figure: architecture-step-2-solution","alt":"architecture-step-2-solution","nro":89,"url":"https://cloud.githubusercontent.com/assets/210413/17643463/96900852-6130-11e6-8e1f-7e116b99f9c8.png","index":1,"caption_template":"Figure: _CAPTION_","label":"architecture-step-2-solution","attributes":{},"skip":false,"key":"1.7.2.3.1"},{"backlink":"exercises/architecture/exercise-4_communicate-through-eventbus.html#fig1.7.2.3.2","level":"1.7.2.3","list_caption":"Figure: image","alt":"image","nro":90,"url":"https://user-images.githubusercontent.com/210413/54008130-30d55f80-41ca-11e9-8523-275161256c9c.png","index":2,"caption_template":"Figure: _CAPTION_","label":"image","attributes":{},"skip":false,"key":"1.7.2.3.2"},{"backlink":"exercises/architecture/exercise-4_communicate-through-eventbus.html#fig1.7.2.3.3","level":"1.7.2.3","list_caption":"Figure: image","alt":"image","nro":91,"url":"https://user-images.githubusercontent.com/210413/54007889-f3240700-41c8-11e9-8124-f105b2393a4a.png","index":3,"caption_template":"Figure: _CAPTION_","label":"image","attributes":{},"skip":false,"key":"1.7.2.3.3"},{"backlink":"exercises/architecture/exercise-4_communicate-through-eventbus.html#fig1.7.2.3.4","level":"1.7.2.3","list_caption":"Figure: image","alt":"image","nro":92,"url":"https://user-images.githubusercontent.com/210413/54007952-54e47100-41c9-11e9-926d-011b813802b1.png","index":4,"caption_template":"Figure: _CAPTION_","label":"image","attributes":{},"skip":false,"key":"1.7.2.3.4"}]},"plugins":["image-captions","highlight"],"pluginsConfig":{"image-captions":{"images":{"1.1.1":{"skip":true}},"variable_name":"_pictures"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","pdf":"styles/pdf.css","website":"styles/website.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"exercises/routing/README.md","mtime":"2019-03-29T19:50:53.090Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T19:53:13.070Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

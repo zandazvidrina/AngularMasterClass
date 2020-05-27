@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "image-captions",
+    "highlight"
+  ],
+  "styles": {
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "website": "styles/website.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+  },
+  "pluginsConfig": {
+    "image-captions": {
+      "images": {
+        "1.1.1": {
+          "skip": true
+        }
+      }
+    }
+  },
+  "gitbook": ">= 3.0.0"
+}
